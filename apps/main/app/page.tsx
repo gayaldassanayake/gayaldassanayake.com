@@ -2,6 +2,7 @@ import { getAllPosts } from "@repo/content-utils";
 import { BlogPostCard } from "@repo/ui";
 import { ProjectCard } from "@repo/ui";
 import { Button } from "@repo/ui";
+import Image from "next/image";
 import path from "path";
 import projectsData from "../data/projects.json";
 import type { Project } from "@repo/content-utils";
@@ -17,22 +18,37 @@ export default function HomePage() {
   return (
     <div className="max-w-5xl mx-auto px-6 py-16">
       {/* Hero */}
-      <section className="mb-20">
-        <h1 className="font-heading text-5xl md:text-7xl font-bold text-foreground mb-6 leading-tight">
-          Hi, I&apos;m{" "}
-          <span className="text-brand-cyan">Gayal</span>.
-        </h1>
-        <p className="text-xl text-foreground/70 max-w-2xl mb-8 leading-relaxed">
-          Software engineer building systems, writing about tech, and exploring
-          the intersection of technology and personal finance.
-        </p>
-        <div className="flex flex-wrap gap-4">
-          <Button href="/blog" size="lg">
-            Read the Blog
-          </Button>
-          <Button href="/projects" variant="outline" size="lg">
-            View Projects
-          </Button>
+      <section className="mb-20 flex flex-col md:flex-row items-center gap-12">
+        {/* Image — left on desktop, top on mobile */}
+        <div className="flex-shrink-0">
+          <Image
+            src="/gayal.png"
+            alt="Gayal Dassanayake"
+            width={320}
+            height={320}
+            className="rounded-full object-cover"
+            priority
+          />
+        </div>
+
+        {/* Text — right on desktop */}
+        <div className="flex-1">
+          <h1 className="font-heading text-5xl md:text-7xl font-bold text-foreground mb-6 leading-tight">
+            Hi, I&apos;m{" "}
+            <span className="text-brand-cyan">Gayal</span>.
+          </h1>
+          <p className="text-xl text-foreground/70 max-w-2xl mb-12 leading-relaxed">
+            Software engineer building systems, writing about tech, and exploring
+            the intersection of technology and personal finance.
+          </p>
+          <div className="flex flex-wrap gap-4">
+            <Button href="/blog" size="lg">
+              Read the Blog
+            </Button>
+            <Button href="/projects" variant="outline" size="lg">
+              View Projects
+            </Button>
+          </div>
         </div>
       </section>
 
