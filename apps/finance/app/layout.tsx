@@ -30,7 +30,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={`${inter.variable} ${playfair.variable}`}>
-      <body>
+      <body suppressHydrationWarning>
         <Navbar items={navItems} logo="Finance" />
         <main className="min-h-screen">{children}</main>
         <Footer name="Gayal Dassanayake" />
