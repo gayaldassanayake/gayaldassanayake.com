@@ -1,0 +1,29 @@
+{
+  "name": "Gayal Dassanayake",
+  "headline": "Software Engineer",
+  "contact": {
+    "email": "gayal@example.com",
+    "linkedin": "https://linkedin.com/in/gayaldassanayake",
+    "github": "https://github.com/gayaldassanayake"
+  },
+  "experience": [
+    {
+      "company": "Example Corp",
+      "role": "Software Engineer",
+      "period": "2023 – Present",
+      "bullets": [
+        "Built and maintained distributed microservices handling 10k req/s.",
+        "Led migration from monolith to event-driven architecture using Kafka.",
+        "Improved CI/CD pipeline, cutting deploy time by 40%."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "University of Moratuwa",
+      "degree": "BSc Engineering (Computer Science & Engineering)",
+      "period": "2018 – 2022"
+    }
+  ],
+  "skills": ["Go", "TypeScript", "Python", "PostgreSQL", "Redis", "Kafka", "Docker", "Kubernetes", "Next.js", "React"]
+}

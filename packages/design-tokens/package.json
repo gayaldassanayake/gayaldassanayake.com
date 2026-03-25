@@ -1,0 +1,12 @@
+{
+  "name": "@repo/design-tokens",
+  "version": "0.0.1",
+  "private": true,
+  "main": "./tailwind.preset.ts",
+  "exports": {
+    ".": "./tailwind.preset.ts"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.17"
+  }
+}

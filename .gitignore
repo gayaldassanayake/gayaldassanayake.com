@@ -1,0 +1,19 @@
+# Node
+node_modules/
+pnpm-debug.log*
+
+# Next.js
+.next/
+out/
+
+# Turbo
+.turbo/
+
+# Build artefacts
+dist/
+
+# OS & editors
+.DS_Store
+.env*.local
+.vscode/
+.idea/

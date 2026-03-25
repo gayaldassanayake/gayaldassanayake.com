@@ -1,0 +1,22 @@
+[
+  {
+    "title": "DistributedCache",
+    "description": "A Redis-compatible in-memory cache built in Go, supporting key expiry, LRU eviction, and a basic replication protocol.",
+    "tags": ["Go", "Systems", "Distributed Systems"],
+    "githubUrl": "https://github.com/gayaldassanayake/distributed-cache",
+    "demoUrl": null,
+    "coverImage": null,
+    "featured": true,
+    "accentColor": "cyan"
+  },
+  {
+    "title": "Personal Website",
+    "description": "This site — a monorepo built with Next.js, Tailwind CSS, and MDX. Features a tech blog and a bilingual finance blog.",
+    "tags": ["TypeScript", "Next.js", "Tailwind"],
+    "githubUrl": "https://github.com/gayaldassanayake/website",
+    "demoUrl": null,
+    "coverImage": null,
+    "featured": true,
+    "accentColor": "orange"
+  }
+]
