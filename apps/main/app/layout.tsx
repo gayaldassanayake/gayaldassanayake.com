@@ -21,6 +21,7 @@ export const metadata: Metadata = {
 const navItems = [
   { label: "Blog", href: "/blog" },
   { label: "Projects", href: "/projects" },
+  { label: "Finance", href: process.env.NEXT_PUBLIC_FINANCE_URL! },
   { label: "About", href: "/about" },
 ];
 
@@ -31,8 +32,8 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={`${inter.variable} ${playfair.variable}`}>
-      <body>
-        <Navbar items={navItems} logo="GD" />
+      <body suppressHydrationWarning>
+        <Navbar items={navItems} logo="GD" logoHref="/" />
         <main className="min-h-screen">{children}</main>
         <Footer name="Gayal Dassanayake" />
       </body>

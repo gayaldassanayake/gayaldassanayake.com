@@ -8,10 +8,11 @@ interface NavItem {
 interface NavbarProps {
   items: NavItem[];
   logo?: React.ReactNode;
+  logoHref?: string;
   className?: string;
 }
 
-export function Navbar({ items, logo, className }: NavbarProps) {
+export function Navbar({ items, logo, logoHref, className }: NavbarProps) {
   return (
     <nav
       className={cn(
@@ -20,7 +21,15 @@ export function Navbar({ items, logo, className }: NavbarProps) {
       )}
     >
       <div className="max-w-5xl mx-auto px-6 h-16 flex items-center justify-between">
-        <div className="font-heading text-xl font-bold">{logo}</div>
+        <div className="font-heading text-xl font-bold">
+          {logoHref ? (
+            <a href={logoHref} className="hover:opacity-80 transition-opacity">
+              {logo}
+            </a>
+          ) : (
+            logo
+          )}
+        </div>
         <ul className="flex gap-6">
           {items.map((item) => (
             <li key={item.href}>
