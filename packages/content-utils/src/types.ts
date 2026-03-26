@@ -31,6 +31,21 @@ export interface ResumeEducation {
   institution: string;
   degree: string;
   period: string;
+  gpa?: string;
+}
+
+export interface ResumeCertification {
+  name: string;
+  valid: string;
+}
+
+export interface ResumeProject {
+  name: string;
+  period: string;
+  description?: string;
+  technologies?: string[];
+  githubUrl?: string;
+  demoUrl?: string;
 }
 
 export interface Resume {
@@ -38,10 +53,15 @@ export interface Resume {
   headline: string;
   contact: {
     email: string;
+    phone?: string;
     linkedin: string;
     github: string;
+    medium?: string;
   };
   experience: ResumeExperience[];
   education: ResumeEducation[];
+  certifications?: ResumeCertification[];
+  projects?: ResumeProject[];
+  topSkills?: { name: string; description: string }[];
   skills: string[];
 }

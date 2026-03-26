@@ -1,29 +1,92 @@
 {
   "name": "Gayal Dassanayake",
-  "headline": "Software Engineer",
+  "headline": "Software Engineer with 4 years of experience in building end-to-end solutions using Java, Message brokers, Docker, and Kubernetes",
   "contact": {
-    "email": "gayal@example.com",
-    "linkedin": "https://linkedin.com/in/gayaldassanayake",
-    "github": "https://github.com/gayaldassanayake"
+    "email": "g.c.dassanayake@gmail.com",
+    "phone": "+94 74 02 75 475",
+    "linkedin": "https://linkedin.com/in/gayal-dassanayake",
+    "github": "https://github.com/gayaldassanayake",
+    "medium": "https://medium.com/@g.c.dassanayake"
   },
   "experience": [
     {
-      "company": "Example Corp",
-      "role": "Software Engineer",
-      "period": "2023 – Present",
+      "company": "WSO2 LLC",
+      "role": "Senior Software Engineer",
+      "period": "02/2024 – Present",
       "bullets": [
-        "Built and maintained distributed microservices handling 10k req/s.",
-        "Led migration from monolith to event-driven architecture using Kafka.",
-        "Improved CI/CD pipeline, cutting deploy time by 40%."
+        "Developed ActiveMQ, Solace, & Debezium CDC connectors for the WSO2 Integration Platform",
+        "Implemented integration solutions addressing customer requirements using RabbitMQ",
+        "Developed the static code analysis tool for the WSO2 Integration Platform"
+      ]
+    },
+    {
+      "company": "WSO2 LLC",
+      "role": "Software Engineer",
+      "period": "05/2022 – 02/2024",
+      "bullets": [
+        "Implemented the tool concept in the WSO2 Integration Platform",
+        "Contributed to the test framework of the integration DSL (Ballerina) of the WSO2 Integration Platform",
+        "Improved the dependency resolution and the package concept of the integration DSL",
+        "Improved the functionality of the integration DSL compiler extensions"
+      ]
+    },
+    {
+      "company": "WSO2 LLC",
+      "role": "Intern Software Engineer",
+      "period": "10/2020 – 04/2021",
+      "bullets": [
+        "Developed the OracleDB connector for WSO2 Integration Platform"
       ]
     }
   ],
   "education": [
     {
       "institution": "University of Moratuwa",
-      "degree": "BSc Engineering (Computer Science & Engineering)",
-      "period": "2018 – 2022"
+      "degree": "BSc.(Hons) Engineering",
+      "period": "2017 – 2022",
+      "gpa": "3.89/4.2"
+    },
+    {
+      "institution": "NIBM",
+      "degree": "Diploma in Computer System Design",
+      "period": "2016 – 2017",
+      "gpa": "3.92/4.0"
     }
   ],
-  "skills": ["Go", "TypeScript", "Python", "PostgreSQL", "Redis", "Kafka", "Docker", "Kubernetes", "Next.js", "React"]
+  "certifications": [
+    {
+      "name": "Certified Kubernetes Application Developer (CKAD)",
+      "valid": "2024 – 2026"
+    }
+  ],
+  "topSkills": [
+    { "name": "Java", "description": "4 years of industry experience contributing to the WSO2 Integration Platform while using Java concepts like SPI, CLI frameworks, and networking libraries" },
+    { "name": "Message brokers", "description": "Successfully developed production-grade event-driven systems with message brokers like RabbitMQ, ActiveMQ, and Solace" },
+    { "name": "Docker, Kubernetes", "description": "CKAD certified, and worked with real-world deployments" },
+    { "name": "AI Agents", "description": "Regularly use AI code agents like Claude Code and MCPs to improve productivity" }
+  ],
+  "projects": [
+    {
+      "name": "Applying Machine Learning Techniques for Metagenomic Binning",
+      "period": "2021 – 2022",
+      "description": "Created a tool that classifies short DNA fragments of plasmids and chromosomes with high precision as the final year project of the university.",
+      "technologies": ["Pytorch", "Scikit-learn", "Python"],
+      "githubUrl": "https://github.com/MetaGSC/MetaPCbin"
+    },
+    {
+      "name": "Sasnaka Sansada Web Application",
+      "period": "2020",
+      "description": "Back-end developer for Sasnaka Sansada, a community service organization. Implemented functionalities of authentication, event management, and automated email generation.",
+      "technologies": ["Node.js", "Express.js", "PostgreSQL", "Jest", "Docker"],
+      "demoUrl": "https://sasnaka.org/",
+      "githubUrl": "https://github.com/gayaldassanayake/sasnaka-backend"
+    },
+    {
+      "name": "The National Volunteering Platform",
+      "period": "2021 – 2022",
+      "description": "Team lead and back-end developer for a web platform for volunteers in Sri Lanka, by the United Nations. Implemented file server, email server, in-memory datastore, ORM, Cron jobs, and database migrations.",
+      "technologies": ["Node.js", "PostgreSQL", "Sequelize", "Redis", "REST"]
+    }
+  ],
+  "skills": ["Java", "RabbitMQ", "ActiveMQ", "Solace", "Docker", "Kubernetes", "Python", "Node.js", "PostgreSQL", "Redis", "TypeScript"]
 }
