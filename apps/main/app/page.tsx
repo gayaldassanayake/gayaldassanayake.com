@@ -38,8 +38,8 @@ export default function HomePage() {
             <span className="text-brand-cyan">Gayal</span>.
           </h1>
           <p className="text-xl text-foreground/70 max-w-2xl mb-12 leading-relaxed">
-            Software engineer building systems, writing about tech, and exploring
-            the intersection of technology and personal finance.
+            Software engineer building real-world systems, obsessed with technology. 
+            Self proclaimed personal finance enthusiast.
           </p>
           <div className="flex flex-wrap gap-4">
             <Button href="/blog" size="lg">

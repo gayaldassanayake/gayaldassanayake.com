@@ -21,7 +21,7 @@ export const metadata: Metadata = {
 const navItems = [
   { label: "Blog", href: "/blog" },
   { label: "Projects", href: "/projects" },
-  { label: "Finance", href: process.env.NEXT_PUBLIC_FINANCE_URL! },
+  { label: "Finance", href: process.env.NEXT_PUBLIC_FINANCE_URL!, newTab: true },
   { label: "About", href: "/about" },
 ];
 

@@ -3,6 +3,7 @@ import { cn } from "../utils";
 interface NavItem {
   label: string;
   href: string;
+  newTab?: boolean;
 }
 
 interface NavbarProps {
@@ -35,6 +36,7 @@ export function Navbar({ items, logo, logoHref, className }: NavbarProps) {
             <li key={item.href}>
               <a
                 href={item.href}
+                {...(item.newTab ? { target: "_blank", rel: "noopener noreferrer" } : {})}
                 className="text-foreground/70 hover:text-foreground transition-colors font-medium text-sm"
               >
                 {item.label}
