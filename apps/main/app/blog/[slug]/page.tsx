@@ -1,5 +1,6 @@
 import { getAllPosts, getPostBySlug } from "@repo/content-utils";
 import { MDXRemote } from "next-mdx-remote/rsc";
+import rehypePrettyCode from "rehype-pretty-code";
 import path from "path";
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
@@ -55,7 +56,14 @@ export default async function BlogPostPage({ params }: Props) {
         </time>
       </div>
       <div className="prose prose-lg max-w-none">
-        <MDXRemote source={post.content} />
+        <MDXRemote
+          source={post.content}
+          options={{
+            mdxOptions: {
+              rehypePlugins: [[rehypePrettyCode, { theme: "github-light" }]],
+            },
+          }}
+        />
       </div>
     </article>
   );
