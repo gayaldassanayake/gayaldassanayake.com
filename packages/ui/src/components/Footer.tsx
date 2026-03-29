@@ -18,7 +18,6 @@ export function Footer({ name = "Your Name", className }: FooterProps) {
         <p>
           &copy; {year} {name}. All rights reserved.
         </p>
-        <p>Built with Next.js &amp; Tailwind CSS</p>
       </div>
     </footer>
   );
