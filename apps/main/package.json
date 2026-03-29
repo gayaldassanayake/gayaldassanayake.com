@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@next/mdx": "^15.1.3",
+    "@react-pdf/renderer": "^4.3.2",
     "@repo/content-utils": "workspace:*",
     "@repo/design-tokens": "workspace:*",
     "@repo/ui": "workspace:*",
