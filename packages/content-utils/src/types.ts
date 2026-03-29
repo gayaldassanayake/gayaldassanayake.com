@@ -22,6 +22,7 @@ export interface Project {
 
 export interface ResumeExperience {
   company: string;
+  companyDescription?: string;
   role: string;
   period: string;
   bullets: string[];

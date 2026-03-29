@@ -11,6 +11,7 @@
   "experience": [
     {
       "company": "WSO2 LLC",
+      "companyDescription": "Provides open-source software for digital transformation - API Management, Integration, CIAM",
       "role": "Senior Software Engineer",
       "period": "02/2024 – Present",
       "bullets": [
@@ -67,11 +68,18 @@
   ],
   "projects": [
     {
-      "name": "Applying Machine Learning Techniques for Metagenomic Binning",
-      "period": "2021 – 2022",
-      "description": "Created a tool that classifies short DNA fragments of plasmids and chromosomes with high precision as the final year project of the university.",
-      "technologies": ["Pytorch", "Scikit-learn", "Python"],
-      "githubUrl": "https://github.com/MetaGSC/MetaPCbin"
+      "name": "Ballerina CDC Connector",
+      "period": "2024 – Present",
+      "description": "Production-grade Change Data Capture listener for the WSO2 Integration Platform, built on Debezium. Streams real-time database changes from MySQL, MSSQL, PostgreSQL, and OracleDB into event-driven Ballerina services.",
+      "technologies": ["Java", "Ballerina", "Debezium"],
+      "githubUrl": "https://github.com/ballerina-platform/module-ballerinax-cdc"
+    },
+    {
+      "name": "DocSense",
+      "period": "2025",
+      "description": "A RAG pipeline that answers natural language questions about Ballerina connector docs using hybrid search — dense embeddings, BM25, and RRF fusion — backed by Qdrant and Claude.",
+      "technologies": ["Python", "FastAPI", "Qdrant", "RAG"],
+      "githubUrl": "https://github.com/gayaldassanayake/docsense"
     },
     {
       "name": "Sasnaka Sansada Web Application",
@@ -82,10 +90,11 @@
       "githubUrl": "https://github.com/gayaldassanayake/sasnaka-backend"
     },
     {
-      "name": "The National Volunteering Platform",
-      "period": "2021 – 2022",
-      "description": "Team lead and back-end developer for a web platform for volunteers in Sri Lanka, by the United Nations. Implemented file server, email server, in-memory datastore, ORM, Cron jobs, and database migrations.",
-      "technologies": ["Node.js", "PostgreSQL", "Sequelize", "Redis", "REST"]
+      "name": "Ballerina Static Code Analysis Tool",
+      "period": "2024",
+      "description": "CLI tool for static analysis of Ballerina projects, with extension points for custom rules and integration with platforms like SonarQube.",
+      "technologies": ["Java", "Ballerina"],
+      "githubUrl": "https://github.com/ballerina-platform/static-code-analysis-tool"
     }
   ],
   "skills": ["Java", "RabbitMQ", "ActiveMQ", "Solace", "Docker", "Kubernetes", "Python", "Node.js", "PostgreSQL", "Redis", "TypeScript"]
