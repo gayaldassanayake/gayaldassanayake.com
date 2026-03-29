@@ -1,22 +1,82 @@
 [
   {
-    "title": "DistributedCache",
-    "description": "A Redis-compatible in-memory cache built in Go, supporting key expiry, LRU eviction, and a basic replication protocol.",
-    "tags": ["Go", "Systems", "Distributed Systems"],
-    "githubUrl": "https://github.com/gayaldassanayake/distributed-cache",
+    "title": "Ballerina CDC Connector",
+    "description": "Production-grade Change Data Capture listener for the WSO2 Integration Platform, built on Debezium. Streams real-time database changes from MySQL, MSSQL, PostgreSQL, and OracleDB into event-driven Ballerina services.",
+    "tags": ["Java", "Ballerina", "CDC", "Debezium"],
+    "githubUrl": "https://github.com/ballerina-platform/module-ballerinax-cdc",
     "demoUrl": null,
     "coverImage": null,
     "featured": true,
     "accentColor": "cyan"
   },
   {
-    "title": "Personal Website",
-    "description": "This site — a monorepo built with Next.js, Tailwind CSS, and MDX. Features a tech blog and a bilingual finance blog.",
-    "tags": ["TypeScript", "Next.js", "Tailwind"],
-    "githubUrl": "https://github.com/gayaldassanayake/website",
+    "title": "DocSense",
+    "description": "A RAG pipeline that answers natural language questions about Ballerina connector docs using hybrid search — dense embeddings, BM25, and RRF fusion — backed by Qdrant and Claude.",
+    "tags": ["Python", "RAG", "AI", "FastAPI", "Qdrant"],
+    "githubUrl": "https://github.com/gayaldassanayake/docsense",
     "demoUrl": null,
     "coverImage": null,
     "featured": true,
+    "accentColor": "purple"
+  },
+  {
+    "title": "Claude Agents",
+    "description": "A collection of custom Claude Code agents — including a Ballerina bug-fixer that diagnoses compiler and runtime errors, applies fixes, and opens pull requests automatically.",
+    "tags": ["TypeScript", "AI", "Claude Code"],
+    "githubUrl": "https://github.com/gayaldassanayake/claude-agents",
+    "demoUrl": null,
+    "coverImage": null,
+    "featured": true,
+    "accentColor": "orange"
+  },
+  {
+    "title": "Ballerina Static Code Analysis Tool",
+    "description": "CLI tool for static analysis of Ballerina projects, with extension points for custom rules and integration with platforms like SonarQube.",
+    "tags": ["Java", "Ballerina", "Static Analysis"],
+    "githubUrl": "https://github.com/ballerina-platform/static-code-analysis-tool",
+    "demoUrl": null,
+    "coverImage": null,
+    "featured": false,
+    "accentColor": "yellow"
+  },
+  {
+    "title": "Ballerina Google Cloud Pub/Sub Connector",
+    "description": "Publisher, subscriber, and listener implementation for Google Cloud Pub/Sub in Ballerina, enabling cloud-native event-driven architectures.",
+    "tags": ["Java", "Ballerina", "GCP", "Pub/Sub"],
+    "githubUrl": "https://github.com/ballerina-platform/module-ballerinax-gcloud.pubsub",
+    "demoUrl": null,
+    "coverImage": null,
+    "featured": false,
+    "accentColor": "cyan"
+  },
+  {
+    "title": "Personal Website",
+    "description": "This site — a Next.js 15 monorepo with a tech blog and a bilingual (EN/SI) finance blog, built with Tailwind CSS and MDX.",
+    "tags": ["TypeScript", "Next.js", "Tailwind", "MDX"],
+    "githubUrl": "https://github.com/gayaldassanayake/gayaldassanayake.com",
+    "demoUrl": null,
+    "coverImage": null,
+    "featured": false,
+    "accentColor": "yellow"
+  },
+  {
+    "title": "RabbitMQ Order System",
+    "description": "A Go-based order processing system demonstrating RabbitMQ as a message broker for decoupled, asynchronous service communication.",
+    "tags": ["Go", "RabbitMQ", "Messaging"],
+    "githubUrl": "https://github.com/gayaldassanayake/rabbitmq-order-system",
+    "demoUrl": null,
+    "coverImage": null,
+    "featured": false,
+    "accentColor": "cyan"
+  },
+  {
+    "title": "Sasnaka Sansada Backend",
+    "description": "REST API for a charitable social service organization's website, covering payment gateway integration, member management, and content administration.",
+    "tags": ["Node.js", "Express", "PostgreSQL"],
+    "githubUrl": "https://github.com/gayaldassanayake/sasnaka-backend",
+    "demoUrl": "https://sasnaka.org/",
+    "coverImage": null,
+    "featured": false,
     "accentColor": "orange"
   }
 ]
