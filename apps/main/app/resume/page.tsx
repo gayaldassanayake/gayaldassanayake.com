@@ -4,11 +4,11 @@ import type { Resume } from "@repo/content-utils";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "About",
+  title: "Resume",
   description: "Learn more about my background, experience, and skills.",
 };
 
-export default function AboutPage() {
+export default function ResumePage() {
   const resume = resumeData as Resume;
 
   return (
@@ -66,6 +66,9 @@ export default function AboutPage() {
                   <div>
                     <h3 className="font-semibold text-lg">{exp.role}</h3>
                     <p className="text-foreground/70">{exp.company}</p>
+                    {exp.companyDescription && (
+                      <p className="text-sm text-foreground/50 italic">{exp.companyDescription}</p>
+                    )}
                   </div>
                   <span className="text-sm text-foreground/50 shrink-0">{exp.period}</span>
                 </div>
