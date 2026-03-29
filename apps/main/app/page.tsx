@@ -5,6 +5,7 @@ import { Button } from "@repo/ui";
 import Image from "next/image";
 import path from "path";
 import projectsData from "../data/projects.json";
+import aboutData from "../data/about.json";
 import type { Project } from "@repo/content-utils";
 
 export default function HomePage() {
@@ -14,7 +15,6 @@ export default function HomePage() {
   const featuredProjects = (projectsData as Project[]).filter(
     (p) => p.featured
   );
-
   return (
     <div className="max-w-5xl mx-auto px-6 py-16">
       {/* Hero */}
@@ -24,8 +24,8 @@ export default function HomePage() {
           <Image
             src="/gayal.png"
             alt="Gayal Dassanayake"
-            width={320}
-            height={320}
+            width={480}
+            height={480}
             className="rounded-full object-cover"
             priority
           />
@@ -102,6 +102,18 @@ export default function HomePage() {
           </div>
         </section>
       )}
+
+      {/* About */}
+      <section className="mt-20">
+        <h2 className="font-heading text-3xl font-bold mb-6 pb-2 border-b border-surface-muted">
+          About
+        </h2>
+        <div className="flex flex-col gap-4">
+          {aboutData.paragraphs.map((p, i) => (
+            <p key={i} className="text-lg text-foreground/70 leading-relaxed">{p}</p>
+          ))}
+        </div>
+      </section>
     </div>
   );
 }
