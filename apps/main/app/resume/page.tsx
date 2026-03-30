@@ -30,7 +30,7 @@ export default function ResumePage() {
             </a>
           </div>
         </div>
-        <Button href="/resume.pdf" variant="outline" target="_blank" rel="noopener noreferrer">
+        <Button href="/resume/pdf" variant="outline" target="_blank" rel="noopener noreferrer">
           Download PDF
         </Button>
       </section>
