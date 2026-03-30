@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     default: "Gayal Dassanayake",
     template: "%s | Gayal Dassanayake",
   },
-  description: "Software engineer, writer, and builder.",
+  description: "Software engineer, builder and content creator.",
 };
 
 const navItems = [
