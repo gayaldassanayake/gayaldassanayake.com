@@ -13,6 +13,9 @@ export default function FinanceLandingPage() {
         Personal Finance,{" "}
         <span className="text-brand-orange">Simplified.</span>
       </h1>
+      <div className="inline-flex items-center bg-brand-orange/10 text-brand-orange border border-brand-orange/30 rounded-full px-8 py-3 text-2xl font-bold mb-8 mt-4 tracking-wide">
+        Coming Soon
+      </div>
       <p className="text-xl text-foreground/70 max-w-2xl mx-auto mb-12">
         Practical insights on investing, budgeting, and building wealth —
         available in English and Sinhala.
