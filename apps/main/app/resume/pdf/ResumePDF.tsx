@@ -276,7 +276,7 @@ export function ResumePDF({ resume }: { resume: Resume }) {
         {/* ── Top Skills ── */}
         {resume.topSkills && resume.topSkills.length > 0 && (
           <View>
-            <Text style={s.sectionTitle}>Top Skills</Text>
+            <Text style={s.sectionTitleItalic}>Top Skills</Text>
             {resume.topSkills.map((skill) => (
               <View key={skill.name} style={s.skillBullet}>
                 <Text style={s.skillDot}>•</Text>
