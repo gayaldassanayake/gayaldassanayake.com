@@ -11,11 +11,21 @@ const playfair = Playfair_Display({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://gayaldassanayake.com"),
   title: {
     default: "Gayal Dassanayake",
     template: "%s | Gayal Dassanayake",
   },
   description: "Software engineer, builder, and content creator.",
+  openGraph: {
+    siteName: "Gayal Dassanayake",
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary",
+    creator: "@gcdassanayake",
+  },
 };
 
 const navItems = [

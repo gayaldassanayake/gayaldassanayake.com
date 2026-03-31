@@ -7,6 +7,31 @@ import path from "path";
 import projectsData from "../data/projects.json";
 import aboutData from "../data/about.json";
 import type { Project } from "@repo/content-utils";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Gayal Dassanayake",
+  description: "Software engineer, builder, and content creator.",
+  openGraph: {
+    title: "Gayal Dassanayake",
+    description: "Software engineer, builder, and content creator.",
+    url: "https://gayaldassanayake.com",
+    type: "website",
+  },
+};
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Person",
+  name: "Gayal Dassanayake",
+  url: "https://gayaldassanayake.com",
+  jobTitle: "Software Engineer",
+  sameAs: [
+    "https://github.com/gayaldassanayake",
+    "https://www.linkedin.com/in/gayal-dassanayake/",
+    "https://x.com/gcdassanayake",
+  ],
+};
 
 export default function HomePage() {
   const contentDir = path.join(process.cwd(), "content", "blog");
@@ -17,6 +42,10 @@ export default function HomePage() {
   );
   return (
     <div className="max-w-5xl mx-auto px-6 py-16">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       {/* Hero */}
       <section className="mb-20 flex flex-col md:flex-row items-center gap-12">
         {/* Image — left on desktop, top on mobile */}
