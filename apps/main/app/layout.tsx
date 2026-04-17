@@ -3,6 +3,8 @@ import { Inter, Playfair_Display } from "next/font/google";
 import "./globals.css";
 import { Navbar } from "@repo/ui";
 import { Footer } from "@repo/ui";
+import { Analytics } from "@vercel/analytics/next";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 const playfair = Playfair_Display({
@@ -45,6 +47,8 @@ export default function RootLayout({
         <Navbar items={navItems} logo="Gayal Dassanayake" logoHref="/" />
         <main className="min-h-screen">{children}</main>
         <Footer name="Gayal Dassanayake" />
+        <Analytics />
+        <SpeedInsights />
       </body>
     </html>
   );
