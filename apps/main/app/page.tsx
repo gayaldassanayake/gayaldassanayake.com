@@ -11,10 +11,10 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Gayal Dassanayake",
-  description: "Software engineer, builder, and content creator.",
+  description: "Software engineer building real-world systems, curious about science and technology.",
   openGraph: {
     title: "Gayal Dassanayake",
-    description: "Software engineer, builder, and content creator.",
+    description: "Software engineer building real-world systems, curious about science and technology.",
     url: "https://gayaldassanayake.com",
     type: "website",
   },
@@ -67,8 +67,7 @@ export default function HomePage() {
             <span className="text-brand-cyan">Gayal</span>.
           </h1>
           <p className="text-xl text-foreground/70 max-w-2xl mb-12 leading-relaxed">
-            Software engineer building real-world systems, obsessed with technology. 
-            Self proclaimed personal finance enthusiast.
+            Software engineer building real-world systems. Deeply curious about science, technology, and how things work.
           </p>
           <div className="flex flex-wrap gap-4">
             <Button href="/blog" size="lg">

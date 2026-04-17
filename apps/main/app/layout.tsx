@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     default: "Gayal Dassanayake",
     template: "%s | Gayal Dassanayake",
   },
-  description: "Software engineer, builder, and content creator.",
+  description: "Software engineer building real-world systems, curious about science and technology.",
   openGraph: {
     siteName: "Gayal Dassanayake",
     locale: "en_US",
