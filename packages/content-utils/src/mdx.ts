@@ -22,6 +22,7 @@ export function getAllPosts(contentDir: string): Post[] {
       published: data.published !== false,
       content,
       counterpartSlug: data.counterpartSlug,
+      accentColor: data.accentColor ?? "cyan",
     } satisfies Post;
   });
 
@@ -46,5 +47,6 @@ export function getPostBySlug(contentDir: string, slug: string): Post | null {
     published: data.published !== false,
     content,
     counterpartSlug: data.counterpartSlug,
+    accentColor: data.accentColor ?? "cyan",
   };
 }

@@ -1,5 +1,6 @@
 import { getAllPosts, getPostBySlug } from "@repo/content-utils";
 import { MDXRemote } from "next-mdx-remote/rsc";
+import { RedditEmbed } from "../../../components/RedditEmbed";
 import rehypePrettyCode from "rehype-pretty-code";
 import path from "path";
 import { notFound } from "next/navigation";
@@ -65,6 +66,7 @@ export default async function BlogPostPage({ params }: Props) {
       <div className="prose prose-lg max-w-none">
         <MDXRemote
           source={post.content}
+          components={{ RedditEmbed }}
           options={{
             mdxOptions: {
               rehypePlugins: [[rehypePrettyCode, { theme: "github-light" }]],

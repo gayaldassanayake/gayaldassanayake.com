@@ -30,6 +30,7 @@ export default function BlogPage() {
               date={post.date}
               tags={post.tags}
               slug={post.slug}
+              accentColor={post.accentColor}
             />
           ))}
         </div>

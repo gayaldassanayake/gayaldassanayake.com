@@ -7,6 +7,7 @@ export interface Post {
   published: boolean;
   content: string;
   counterpartSlug?: string;
+  accentColor: "cyan" | "orange" | "yellow" | "purple";
 }
 
 export interface Project {

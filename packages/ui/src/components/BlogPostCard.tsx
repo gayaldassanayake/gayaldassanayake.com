@@ -7,6 +7,7 @@ interface BlogPostCardProps {
   tags: string[];
   slug: string;
   basePath?: string;
+  accentColor?: "cyan" | "orange" | "yellow" | "purple";
 }
 
 export function BlogPostCard({
@@ -16,10 +17,11 @@ export function BlogPostCard({
   tags,
   slug,
   basePath = "/blog",
+  accentColor = "cyan",
 }: BlogPostCardProps) {
   return (
     <a href={`${basePath}/${slug}`} className="block group">
-      <Card accentColor="cyan" className="h-full">
+      <Card accentColor={accentColor} className="h-full">
         <div className="flex flex-col gap-3 h-full">
           <div className="flex flex-wrap gap-2">
             {tags.map((tag) => (
